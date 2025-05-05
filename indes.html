@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+  font-family: Arial, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 30%;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.project-table th, .project-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: columm;
+  gap: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to <mark>My Protfolio</mark></h1>
+        <hr>
+    </header>
+    <section id="about">
+        <article class="profile">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div>
+                <h2>Hello, I'm <b>Your Name</b></h2>
+                <p><i>Web Developer</i> with a passion for clean UI.</p>
+                <p class="typewriter">Web Developer | UI Designer | Freelancer</p>
+                <p>Started in <sup>2015</sup>, worked on <sub>30+</sub> projects.</p>
+                <div class="social-icons">
+                    <a href="#" src="facebook.svg" alt="Facebook"></a>
+                    <a href="#" src="linkedin.svg" alt="LinkedIn"></a>
+                    <a href="#" src="github.svg" alt="GitHub"></a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project One</h3>
+                <p>A <b>responsive</b> landing page.</p>
+                <button>View Project</button>
+            </div>
+            <div class="card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>A <i>dynamivc</i> protfolio template.</p>
+                <button>Viwe Project</button>
+            </div>
+            <div class="card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>An <u>eCommerce</u> web app.</p>
+                <button>Viwe Project</button>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Technology Used</th>
+                <th>Completion</th>
+            </tr>
+            <tr>
+                <td>Profect One</td>
+                <td>Landing page design</td>
+                <td>HTML, CSS</td>
+                <td>jan 2024</td>
+            </tr>
+            <tr>
+                <td>Project Three</td>
+                <td>Shopping site</td>
+                <td>JavaScript, Node.js</td>
+                <td>may 2024</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" naem="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="massage">MAssage:</label>
+            <textarea name="massage" id="massage" rows="5"></textarea>
+
+            <button type="submit">submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved,</p>
+    </footer>
+</body>
+</html>
